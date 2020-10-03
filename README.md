@@ -1,11 +1,15 @@
 # Li-Fi
 Transferring data using Li-Fi (Light Fidelity)  
 Li-Fi (light fidelity) is a bidirectional wireless system that transmits data via LED or infrared light. It was first unveiled in 2011 and, unlike Wi-Fi, which uses radiofrequency, Li-Fi technology only needs a light source with a chip to transmit data through light waves. This project transmits audio which is accepted from an auxiliary input and SD card. There are 2 approaches to this,  
-Method-1  
+
+### Method-1  
 A transistor can be used as an LED driver and audio amplifier simultaneously at the transmitter and an op-amp IC can be used at the receiver side.  
-Method-2  
+
+### Method-2  
 One can either use an ADC (Analog to Digital Converter) at the transmitter and a DAC (Digital to Analog Converter) at the receiver to communicate.  
+
 This project focuses on Method-1.  
+
 ## Transmitter  
 The transmitter uses a transistor (BC548) as an audio amplifier as well as an LED driver. The input can either be from an aux cable or an SD card. To receive the input from the SD card, an Arduino is used with the SD card module to process the audio from the SD card. An audio file can’t be copied straight to the SD card, the file needs to be converted to .wav format and the bit rate should be specified in the code which is uploaded to the Arduino, also the audio should be changed from stereo to mono.  The code once executed displays all the files which are there in the root of the SD card, detects .wav files, and plays them. The volume can be controlled by changing the value in line 24 of the code (audio.setVolume(5);    //   0 to 7. Set volume level).  Analog pin A2 when grounded plays the next file and A3 when grounded pauses and plays the file (Both hold until they are disconnected from the ground). A switch is used to switch from auxiliary to SD card input. An LED connected to the collector of the transistor transmits the data to the receiver.  
 ## Receiver  
