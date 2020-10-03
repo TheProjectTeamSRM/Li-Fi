@@ -3,7 +3,7 @@ Transferring data using Li-Fi (Light Fidelity)
 Li-Fi (light fidelity) is a bidirectional wireless system that transmits data via LED or infrared light. It was first unveiled in 2011 and, unlike Wi-Fi, which uses radiofrequency, Li-Fi technology only needs a light source with a chip to transmit data through light waves. This project transmits audio which is accepted from an auxiliary input and SD card. There are 2 approaches to this,  
 
 ### Method-1  
-A transistor can be used as an LED driver and audio amplifier simultaneously at the transmitter and an op-amp IC can be used at the receiver side.  
+A transistor can be used as an LED driver and an audio amplifier simultaneously at the transmitter and an op-amp IC can be used at the receiver side.  
 
 ### Method-2  
 One can either use an ADC (Analog to Digital Converter) at the transmitter and a DAC (Digital to Analog Converter) at the receiver to communicate.  
