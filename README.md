@@ -15,3 +15,14 @@ The transmitter uses a transistor (BC548) as an audio amplifier as well as an LE
 ## Receiver  
 The receiver uses an op-amp IC to amplify the signal which it receives from the solar panel. Instead of a solar panel, LDR (Light Dependent Resistor) can be used to receive the light input from the LED. The solar panel creates a small voltage that carries the data it received from the transmitter LED. The Op-amp amplifies this input and through a channel of capacitors, it is filtered and played using a ¼ watt speaker. To the gain of the IC pin, 1 and 8 are connected to a capacitor of 10µF which sets the gain to 10. The value of the capacitor sets the gain of the IC. A preset is used with the pins of the solar panel to control the output power or volume.
 ![Receiver](Receiver.jpg)
+
+## Circuit Diagrams
+
+## Receiver End
+
+![CD Receiver](CDR.png)
+
+
+## Transmitter End
+
+![CD Transmitter](CDT.png)
